@@ -41,7 +41,9 @@ a:active {
   text-decoration: underline;
 }
 
-
+li {
+  text-align: left;
+}
 
 
 /* Header */
@@ -57,13 +59,14 @@ header {
 
 h1 {
   font-size: 2rem;
-  font-weight: bold;
   line-height: 1.2;
 }
 
-
-
-
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
 
 /* Navigation Bar */
 
@@ -105,31 +108,64 @@ header .flex {
   justify-content: flex-end;
 }
 
-
-
-
-/* three unequal columns that sit next to each other */
-.column {
+/* Main Headline */
+.main {
+  text-align: center;
   padding: 10px;
+  margin: 10px;
+  color: #f1f1f1;
+  height: auto;
+  width: auto;
+  background-color: #947b7b;
+}
+
+/* content cards */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: flex;
+  display: table;
   clear: both;
 }
 
-/* Left and right column */
-.column.side {
-  float: left;
-  width: 33.33%;
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #e3cca0;
 }
 
-/* Middle column */
-.column.middle {
-  float: left;
-  width: 33.33%;
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 
