@@ -42,7 +42,7 @@ a:active {
 }
 
 li {
-  text-align: left;
+  text-align: 
 }
 
 
@@ -113,10 +113,8 @@ header .flex {
   text-align: center;
   padding: 10px;
   margin: 10px;
-  color: #f1f1f1;
   height: auto;
   width: auto;
-  background-color: #947b7b;
 }
 
 /* content cards */
