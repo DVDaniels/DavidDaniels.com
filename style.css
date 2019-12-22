@@ -5,21 +5,17 @@
 html {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-size: 14px;
-  background-color: white;
 }
 
 body {
   line-height: 1.4rem;
+  margin: 0;
+  min-height: 100%;
+  background-image: url("resources/My Lake.jpeg");
+  background-size: cover;
 }
 
-.container {
-  max-width: 1110px;
-  margin: auto;
-}
-
-.flex {
-  display: flex;
-}
+/* Links */
 
 a {
   color: white;
@@ -29,32 +25,19 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: underline;
 }
 
-a:active {
-  text-decoration: underline;
-}
-
 li {
-  text-align: 
+  text-align:
 }
 
 
 /* Header */
 
 header {
-  background-image: url(resources/enjoy-sunset.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 1rem;
-  height: 30rem;
+  margin: 20px;
 }
 
 h1 {
@@ -63,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.1;
 }
@@ -77,7 +60,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  opacity: .65;
 }
 
 nav div {
@@ -104,108 +86,67 @@ ul li {
   display: none;
 }
 
-header .flex {
-  justify-content: flex-end;
-}
+
 
 /* Main Headline */
+
 .main {
-  text-align: center;
   padding: 10px;
   margin: 10px;
   height: auto;
   width: auto;
-}
-
-/* content cards */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {
-  margin: 0 -5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  align-items: center;
   text-align: center;
-  background-color: #e3cca0;
+  color: white;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.MyBio {
+  margin: auto;
+  padding: 5px;
+  overflow: auto;
+  width: 85%;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid green;
+  opacity: 0.99;
 }
+
 
 
 /* Footer */
 
 footer {
-  background-color: #7c8992;
-  margin-top: 4rem;
-  margin-bottom: 0rem;
-  border-top: 1px solid #eee;
-  padding: 2rem 2rem 4rem 2rem;
-  color: white;
-  font-size: 1rem;
+   width: 95%;
+   background-color: #7c8992;
+   color: white;
+   text-align: center;
+   align-items: center;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 2rem;
+   margin:auto;
+   position: fixed;
+   padding: 10px;
 }
 
-@media only screen and (max-width: 640px)  {
-  footer {
-    justify-content: center;
-  }
-
-  footer div {
-    display: none;
-  }
-  }
 
 
-
-
-
-  /* Responsive CSS */
+  /* Responsive CSS, breakpoints at 1024px and 640px */
 
   @media only screen and (max-width: 1024px) {
 
-    header {
+    .header {
       padding-top: 0;
-      height: 22rem;
     }
 
-    nav.container {
+    .nav.container {
       max-width: 100%;
     }
 
+    footer {
+      display: none;
+    }
   }
 
 
@@ -217,11 +158,8 @@ footer {
     .menu .truncated-menu {
       display: block;
     }
-
-
-    header {
-      background-position: 20%;
-      height: 17rem;
+    footer {
+      display: none;
     }
 
   }
