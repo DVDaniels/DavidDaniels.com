@@ -3,7 +3,7 @@
 /* Universal Styles */
 
 html {
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
 }
 
@@ -11,7 +11,7 @@ body {
   line-height: 1.4rem;
   margin: 0;
   min-height: 100%;
-  background-image: url("resources/My Lake.jpeg");
+  background-image: url("resources/bluebackground.jpg");
   background-size: cover;
 }
 
@@ -55,7 +55,7 @@ h2 {
 
 nav {
   padding: 1rem 0;
-  background-color: #846d71;
+  background-color: #011892;
   color: white;
   display: flex;
   align-items: center;
@@ -100,6 +100,8 @@ ul li {
   color: white;
 }
 
+
+
 .MyBio {
   margin: auto;
   padding: 5px;
@@ -107,7 +109,6 @@ ul li {
   width: 85%;
   align-items: center;
   background-color: #ffffff;
-  border: 2px solid green;
   opacity: 0.99;
 }
 
@@ -117,7 +118,7 @@ ul li {
 
 footer {
    width: 95%;
-   background-color: #7c8992;
+   background-color: #000b47;
    color: white;
    text-align: center;
    align-items: center;
@@ -144,8 +145,12 @@ footer {
       max-width: 100%;
     }
 
+    .MyBio {
+      margin-bottom: 5rem;
+    }
+
     footer {
-      display: none;
+      display: block;
     }
   }
 
@@ -158,8 +163,15 @@ footer {
     .menu .truncated-menu {
       display: block;
     }
+
+    .MyBio {
+      margin-bottom: 5rem;;
+    }
+
     footer {
-      display: none;
+      display: block;
+      text-align: center;
+      align-items: center;
     }
 
   }

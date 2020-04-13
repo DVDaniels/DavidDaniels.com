@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>traffic.html</title>
+<style type="text/css">
+<!--
+  em,h1,h2,h3,h4,h5,h6,form,input,br,hr,p,td,th,li,ul {
+  font-family:Verdana,Arial,Helvetica,sans-serif; }
+
+  td {color:#000000; background-color:#cccccc;}
+
+  th {color:#000000; background-color:#999999;}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+
+<!-- HEADER -->
+<h1>Traffic analysis for HTTP, FTP/SFTP, e-mail and WebDAV</h1>
+<p>
+The following analysis shows your monthly data transfer volumes for
+the current year, divided up into HTTP, FTP, e-mail and WebDAV.
+A summary is shown in the first two columns.
+</p>
+
+<p>
+HTTP, WebDAV and FTP/SFTP traffic is based on the access.log.&lt;week&gt;.&lt;weekday&gt;,
+dav.log.&lt;week&gt;.&lt;weekday&gt;, ftp.xferlog and sftp.log files
+respectively, located in your '/logs' directory (separate FTP transfer logs
+apply to packages with a non-shared IP address only).
+</p>
+
+<p>
+The column labeled "quantity" of the category mail indicates the number
+of e-mails that originated from scripts running on your virtual host.
+This does not include e-mails sent via mailing lists.
+</p>
+
+<p>
+The number of megabytes in each category indicates how many megabytes
+were actually consumed by the specified number of requests.
+</p>
+
+<table border="0" cellspacing="2" cellpadding="3">
+<thead>
+<tr>
+<th></th>
+<th colspan="2">Total</th>
+<th colspan="2">HTTP</th>
+<th colspan="2">FTP/SFTP</th>
+<th colspan="2">Mail</th>
+<th colspan="2">WebDAV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Month</th>
+<th>Megabytes</th><th>Requests</th>
+<th>Megabytes</th><th>Requests</th>
+<th>Megabytes</th><th>Requests</th>
+<th>Megabytes</th><th>Quantity</th>
+<th>Megabytes</th><th>Requests</th>
+</tr>
+<tr><th><a href="12.html">2019-12</a></th>
+<td align="right">9,965.6</td><td align="right" style="border-left:0px;">120,405</td>
+<td align="right">9,965.3</td><td align="right" style="border-left:0px;">120,373</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.4</td><td align="right" style="border-left:0px;">32</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2019-12 9965.608 120405 9965.251 120373 0.000 0 0.356 32 0.000 0 -->
+<tr><th><a href="11.html">2019-11</a></th>
+<td align="right">5,451.8</td><td align="right" style="border-left:0px;">124,589</td>
+<td align="right">5,451.5</td><td align="right" style="border-left:0px;">124,559</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.3</td><td align="right" style="border-left:0px;">30</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2019-11 5451.826 124589 5451.532 124559 0.000 0 0.294 30 0.000 0 -->
+<tr><th><a href="10.html">2019-10</a></th>
+<td align="right">4,800.0</td><td align="right" style="border-left:0px;">124,262</td>
+<td align="right">4,799.7</td><td align="right" style="border-left:0px;">124,234</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.3</td><td align="right" style="border-left:0px;">26</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">2</td>
+</tr>
+<!-- 2019-10 4799.977 124262 4799.696 124234 0.000 0 0.281 26 0.000 2 -->
+<tr><th><a href="09.html">2019-09</a></th>
+<td align="right">5,613.0</td><td align="right" style="border-left:0px;">155,816</td>
+<td align="right">5,612.6</td><td align="right" style="border-left:0px;">155,784</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.4</td><td align="right" style="border-left:0px;">23</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">9</td>
+</tr>
+<!-- 2019-09 5612.985 155816 5612.609 155784 0.000 0 0.374 23 0.002 9 -->
+<tr><th><a href="08.html">2019-08</a></th>
+<td align="right">5,827.0</td><td align="right" style="border-left:0px;">147,091</td>
+<td align="right">5,826.7</td><td align="right" style="border-left:0px;">147,052</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.3</td><td align="right" style="border-left:0px;">26</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">13</td>
+</tr>
+<!-- 2019-08 5827.020 147091 5826.732 147052 0.000 0 0.288 26 0.000 13 -->
+<tr><th><a href="07.html">2019-07</a></th>
+<td align="right">5,284.5</td><td align="right" style="border-left:0px;">145,134</td>
+<td align="right">5,284.2</td><td align="right" style="border-left:0px;">145,102</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.3</td><td align="right" style="border-left:0px;">24</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">8</td>
+</tr>
+<!-- 2019-07 5284.527 145134 5284.195 145102 0.000 0 0.332 24 0.000 8 -->
+<tr><th><a href="06.html">2019-06</a></th>
+<td align="right">5,301.8</td><td align="right" style="border-left:0px;">149,012</td>
+<td align="right">5,301.5</td><td align="right" style="border-left:0px;">148,986</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.3</td><td align="right" style="border-left:0px;">24</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">2</td>
+</tr>
+<!-- 2019-06 5301.751 149012 5301.483 148986 0.000 0 0.268 24 0.000 2 -->
+<tr><th><a href="05.html">2019-05</a></th>
+<td align="right">5,783.4</td><td align="right" style="border-left:0px;">166,573</td>
+<td align="right">5,783.2</td><td align="right" style="border-left:0px;">166,535</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.3</td><td align="right" style="border-left:0px;">33</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">5</td>
+</tr>
+<!-- 2019-05 5783.438 166573 5783.153 166535 0.000 0 0.285 33 0.000 5 -->
+<tr><th><a href="04.html">2019-04</a></th>
+<td align="right">6,475.9</td><td align="right" style="border-left:0px;">162,636</td>
+<td align="right">6,475.5</td><td align="right" style="border-left:0px;">162,592</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.4</td><td align="right" style="border-left:0px;">31</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">13</td>
+</tr>
+<!-- 2019-04 6475.859 162636 6475.493 162592 0.000 0 0.366 31 0.000 13 -->
+<tr><th><a href="03.html">2019-03</a></th>
+<td align="right">6,886.6</td><td align="right" style="border-left:0px;">162,967</td>
+<td align="right">6,886.2</td><td align="right" style="border-left:0px;">162,929</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.3</td><td align="right" style="border-left:0px;">27</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">11</td>
+</tr>
+<!-- 2019-03 6886.582 162967 6886.235 162929 0.000 0 0.347 27 0.000 11 -->
+<tr><th><a href="02.html">2019-02</a></th>
+<td align="right">5,382.8</td><td align="right" style="border-left:0px;">139,516</td>
+<td align="right">5,382.4</td><td align="right" style="border-left:0px;">139,483</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.4</td><td align="right" style="border-left:0px;">22</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">11</td>
+</tr>
+<!-- 2019-02 5382.777 139516 5382.417 139483 0.000 0 0.360 22 0.000 11 -->
+</tbody>
+</table>
+
+<!-- FOOTER -->
+<pre>
+1 kB = 1000 Bytes
+1 MB = 1000 kB
+1 GB = 1000 MB
+</pre>
+
+
+</body>
+</html>
