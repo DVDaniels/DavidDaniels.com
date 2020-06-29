@@ -36,12 +36,6 @@ li {
   list-style-type: none;
 }
 
-hr {
-  height: 10px;
-  color: #797a79;
-  background-color: #f6f9f6;
-}
-
 /* Style all font awesome icons */
 .fa {
   padding: 20px;
@@ -77,7 +71,7 @@ a:hover {
 /* Style the Header */
 header {
   margin-bottom: 0px;
-  border-bottom: solid tan 2px;
+  border-bottom: solid lightslategray 2px;
 }
 
 /* Style the Navigation Bar */
@@ -92,7 +86,6 @@ nav {
   padding: 1rem 0;
   color: white;
   background-color: #263e71;
-  border-bottom: seashell 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,9 +122,11 @@ nav img {
 
 /* Main Headline */
 .banner {
+  position: relative;
   width: 100%;
   height: auto;
   margin-bottom: 0px;
+  border-bottom: lightslategrey solid 2px;
 }
 
 .banner img {
@@ -144,6 +139,23 @@ nav img {
   height: auto;
   margin-top: 10px;
   border-radius: 10px;
+}
+
+.headline{
+  position: absolute;
+  float: inherit;
+  display: block;
+  background-color: #253d70;
+  padding: 2rem 3rem;
+  top: 5rem;
+  right: 5rem;
+  border: solid lightslategray 2px;
+  color: #dcdedc;
+  text-align: center;
+}
+
+.headline h2 {
+  color: #f8f9f8;
 }
 
 /* two containers side by side */
@@ -170,7 +182,7 @@ nav img {
   height: auto;
   padding: 20px;
   margin-right: 20px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 /* Signup Button */
@@ -219,8 +231,8 @@ nav img {
 
 footer {
    width: 100%;
-   background-color: #f8f9f8;
-   color: #545554;
+   background-color: lightslategray;
+   color: #f8f9f8;
    text-align: center;
    align-items: center;
    right: 0;
@@ -232,7 +244,7 @@ footer {
 }
 
 footer a {
-  color: #282828;
+  color: #f8f9f8;
 }
 
 /* Set a specific color for each social media button */
