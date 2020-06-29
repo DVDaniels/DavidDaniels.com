@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Universal Styles */
 /* Universal font weights used are 100, 300 & 700 */
 
@@ -33,6 +32,10 @@ h2 {
   color: #535453;
 }
 
+li {
+  list-style-type: none;
+}
+
 hr {
   height: 10px;
   color: #797a79;
@@ -49,11 +52,11 @@ hr {
   border-radius: 50%;
 }
 
-/* Add a hover effect */
 .fa:hover {
   opacity: 0.7;
 }
 
+/* Link Styles */
 a {
   color: white;
 }
@@ -66,7 +69,7 @@ a:hover {
   text-decoration: underline;
 }
 
-li {
+.menu li {
   text-align: center;
 }
 
@@ -82,6 +85,7 @@ header {
   position: relative;
   text-align: center;
   color: white;
+  height: 10px;
 }
 
 nav {
@@ -106,11 +110,11 @@ nav img {
   margin-right: 1rem;
 }
 
-ul {
+.menu ul {
   margin-right: 1rem;
 }
 
-ul li {
+.menu ul li {
   display: inline;
   padding: 1rem 1rem;
 }
@@ -124,9 +128,15 @@ ul li {
 }
 
 /* Main Headline */
-.bannerImage {
+.banner {
+  width: 100%;
   height: auto;
+  margin-bottom: 0px;
+}
+
+.banner img {
   max-width: 100%;
+  height: auto;
 }
 
 .image {
@@ -163,9 +173,23 @@ ul li {
   margin-top: 30px;
 }
 
+/* Signup Button */
+.signup {
+  text-align: center;
+  vertical-align: auto;
+}
+
+.email {
+  vertical-align: auto;
+}
+
 
 /* element under mycontainer1 */
-.practice {
+.infoContainer {
+  
+}
+
+.services {
   align-items: center;
   text-align: center;
   color: black;
@@ -178,7 +202,7 @@ ul li {
   margin-right: 20px;
 }
 
-.practice2 {
+.portfolio {
   align-items: center;
   text-align: center;
   color: black;
@@ -211,7 +235,7 @@ footer a {
   color: #282828;
 }
 
-/* Set a specific color for each brand */
+/* Set a specific color for each social media button */
 
 /* Facebook */
 .fa-facebook {
@@ -234,10 +258,6 @@ footer a {
   background: #ff6600;
   color: white;
 }
-
-/* Link Styles */
-
-
 
   /* Responsive CSS, breakpoints at 1024px and 640px */
 
